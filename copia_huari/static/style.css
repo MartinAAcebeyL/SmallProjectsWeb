@@ -133,3 +133,86 @@ body{
 .youtube div img{
     width: var(--ancho_imagen_max)
 }
+
+/*other products*/
+.other-products{
+    width: var(--ancho_contenido_min);
+    margin: auto;
+}
+
+.other-products > div{
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.other-products > div div:hover{
+    opacity: 0.8;
+}
+
+.other-products p{
+    position: relative;
+    top: -3.5rem;
+    right: -1rem;
+    color: white;
+    font-size: xx-large;
+    font-weight: bold;
+    margin: 0;
+}
+
+.other-products h3{
+    text-align: center;
+    font-size: x-large;
+    color: black;
+}
+
+.other-products img{
+    width: 18.5rem;
+}
+
+/*social media*/
+.social-media{
+    width: var(--ancho_contenido_min);
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+.social-media i{
+    border-right: 2px solid black;
+    padding-right: 0.2rem;
+    margin: auto 0.5rem;
+}
+
+.social-media button{
+    font-size: large;
+    margin-right: 1rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+}
+
+.social-media button:hover{
+    background: linear-gradient(to right, #8bc7f1, #49cf83);
+    color: white;
+    transform: scale(1.1);
+}
+
+/*footer*/
+
+footer{
+    display: grid;
+    width: 80%;
+    margin: auto;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "header header1 header2 header3 . logo"
+    "footer footer footer . . logo";
+}
+
+footer .hFooter{
+    grid-area: header;
+}
+
+footer .fFooter{
+    grid-area: footer;
+}
