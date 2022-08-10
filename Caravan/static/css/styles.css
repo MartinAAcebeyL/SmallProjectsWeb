@@ -9,8 +9,10 @@
     --white-color: #FFFFFF;
 }
 
+/* navar */
 #presentation{
     height: 100vh;
     width: 100%;
     background-image: url(/images/m-e-wlng.jpeg);
 }
+
