@@ -15,16 +15,16 @@
                 <img src="images/logo-caravan@2x.png" alt="empresa caravan">
             </figure>
         </a>
-        <li>
-            <ul><a href="">Private hire</a></ul>
-            <ul><a href="">gist Vouchers</a></ul>
-            <ul><a href="">Shop</a></ul>
-        </li>
-        <li>
-            <ul><a href="">all locations</a></ul>
-        </li>
+        <ul>
+            <li><a href="">Private hire</a></li>
+            <li><a href="">gist Vouchers</a></li>
+            <li><a href="">Shop</a></li>
+        </ul>
+        <ul>
+            <li><a href="">all locations</a></li>
+        </ul>
     </nav>
-    <section id="presentation">
+    <section id="presentation"> 
         <div>
             <article>
                 <figure>
@@ -79,59 +79,73 @@
     <section id="offerts">
         <article>
             <figure><img src="images/brunch-box-eggs-1.jpg" alt="brunch-box-eggs-1"></figure>
-            <span>Might fine craft cofee <br>to enjoy at home</span>
-            <span><a href="">shop now</a></span>
+            <p>
+                <span class="big-upper-font">Might fine craft cofee <br>to enjoy at home</span><br><br>
+                <span><a href="">shop now</a></span>
+            </p>
         </article>
         <article>
             <figure><img src="images/ccr-new-bags-2022.jpg" alt="ccr-new-bags-2022"></figure>
-            <span>caravan:dining all day<br>cookbook</span>
-            <span>buy online</span>
+            <p>
+                <span class="big-upper-font">caravan:dining all day<br>cookbook</span><br><br>
+                <span>buy online</span>
+            </p>
         </article>
         <article>
             <figure><img src="images/private-hire-and-events-img-610x610px.jpg" alt="private-hire-and-events"></figure>
-            <span>Gist vouchers</span>
-            <span>order now</span>
+            <p>
+                <span class="big-upper-font">Gist vouchers</span><br><br>
+                <span>order now</span>
+            </p>
         </article>
         <p>to the op</p>
     </section>
-    <footer>
-        <nav>
-            <ul>
-                <li>LOCATIONS</li>
-                <li>KING'S CROSS</li>
-                <li>EXMOUTH MARKET</li>
-                <li>BANKSIDE</li>
-                <li>CITY</li>
-                <li>FITZROVIA</li>
-                <li>CANARY WHARF</li>
-                <li>VARDO, CHELSEA</li>
-                <li>ROASTERY HQ</li>
-            </ul>
-        </nav>
-        <nav>
-            <ul>
-                <li>SHOP</li>
-                <li>JOURNAL</li>
-                <li>WORK WITH US</li>
-                <li>CONTACT</li>
-                <li>CHARITY</li>
-                <li>COVID-19</li>
-            </ul>
-        </nav>
+    <footer id="footer">
+        <section id="footer-nav">
+            <nav>
+                <ul>
+                    <li>LOCATIONS</li>
+                    <li>KING'S CROSS</li>
+                    <li>EXMOUTH MARKET</li>
+                    <li>BANKSIDE</li>
+                    <li>CITY</li>
+                    <li>FITZROVIA</li>
+                    <li>CANARY WHARF</li>
+                    <li>VARDO, CHELSEA</li>
+                    <li>ROASTERY HQ</li>
+                </ul>
+            </nav>
+            <nav>
+                <ul>
+                    <li>SHOP</li>
+                    <li>JOURNAL</li>
+                    <li>WORK WITH US</li>
+                    <li>CONTACT</li>
+                    <li>CHARITY</li>
+                    <li>COVID-19</li>
+                </ul>
+            </nav>
+        </section>
         <form action="">
-            <input type="email" name="email" id="email" placeholder="Email address*" required>
-            <select name="" id="">
-                <option value="0" disabled>chose restaurant</option>
-                <option value="222">Banside</option>
-                <option value="333">Canary Wharf</option>
-                <option value="321">City</option>
-                <option value="111">Exmout Market</option>
-                <option value="122">Fiztrobia</option>
-                <option value="123">kings cross</option>
-            </select><span>▾</span>
-            <input type="checkbox" id="optin_email" name="optin_email">
-            <label for="optin_email">Send me all the latest news, events and happenings at Caravan Restaurants</label>
-            <button id="submit">Join the Journey</button>
+            <div>
+                <input type="email" name="email" id="email" placeholder="Email address*" required>
+            </div>
+            <div>
+                <select name="" id="">
+                    <option value="0" disabled>chose restaurant</option>
+                    <option value="222">Banside</option>
+                    <option value="333">Canary Wharf</option>
+                    <option value="321">City</option>
+                    <option value="111">Exmout Market</option>
+                    <option value="122">Fiztrobia</option>
+                    <option value="123">kings cross</option>
+                </select>
+            </div>
+            <div>
+                <input type="checkbox" id="optin_email" name="optin_email">
+                <label for="optin_email">Send me all the latest news, events and happenings at Caravan Restaurants</label>
+            </div>
+            <a id="submit">Join the Journey <span id="arrow-right"></span></a>
         </form>
     </footer>
 </body>
