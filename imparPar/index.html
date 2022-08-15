@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>par impar</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <main>
+        <header id="header">
+            <h1>
+                Juego de par impar
+            </h1>
+            <div>
+                <label for="par">JUGADA MANO PAR</label>
+                <input type="radio" name="parImpar" id="par" checked><br>
+
+                <label for="impar">JUGADA MANO IMPAR</label>
+                <input type="radio" name="parImpar" id="impar">
+                <button onclick="seleccion_jugador()">Escojer</button>
+            </div>
+            <section id="score">
+                <p>Partidas ganadas Jugador 1: <span id="jugador1">0</span></p>
+                <p>Partidas ganadas Jugador 2: <span id="jugador2">0</span></p>
+            </section>
+        </header>
+        
+        <!-- <section> -->
+            <!-- <p>GANASTE YEAHHH</p> -->
+            <!-- <p>PERDISTE NOUUU</p> -->
+        <!-- </section> -->
+        
+        <section id="izquierda">
+            <figure>
+                <img src="" alt="" >
+            </figure>    
+        </section>
+
+        <section id="derecha">
+            <figure>
+                <img src="" alt="">
+            </figure> 
+        </section>
+    </main>
+    <footer>
+        <div id="suma"></div>
+        <div id="ganador"></div>
+    </footer>
+</body>
+</html>
