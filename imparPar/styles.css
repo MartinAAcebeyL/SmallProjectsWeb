@@ -1,0 +1,20 @@
+*{
+    box-sizing: border-box;
+    color: black;
+    margin: 0;
+}
+
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+
+#izquierda{
+    width: 50%;
+}
+
+#derecha{
+    width: 50%;
+}
