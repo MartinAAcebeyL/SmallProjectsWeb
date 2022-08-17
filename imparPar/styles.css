@@ -18,3 +18,22 @@
 #derecha{
     width: 50%;
 }
+
+.text{
+    font-size: xx-large;
+    font-weight: 900;
+    font-style: italic;
+    text-align: center;
+}
+
+#jugadores{
+    display: flex;
+}
+
+footer{
+    width: 40%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+
+}

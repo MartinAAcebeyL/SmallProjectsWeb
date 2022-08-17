@@ -10,9 +10,10 @@
 </head>
 <body>
     <main>
-        <header id="header">
+        <header id="header" class="text">
             <h1>
-                Juego de par impar
+                Juego de par impar <br>
+                <span id="tipoJugador"></span>
             </h1>
             <div>
                 <label for="par">JUGADA MANO PAR</label>
@@ -23,16 +24,18 @@
                 <button onclick="juego.start()">Jugar</button>
             </div>
             <section id="score">
-                <p>Partidas ganadas Jugador 1: <span id="jugador1">0</span></p>
-                <p>Partidas ganadas Jugador 2: <span id="jugador2">0</span></p>
+                <p>Partidas ganadas Jugador Humano: <span id="jugador1">0</span></p>
+                <p>Partidas ganadas Jugador Pc: <span id="jugador2">0</span></p>
             </section>
         </header>
-        <p id="izquierda"></p>
-        <p id="derecha"></p>
+        <section id="jugadores">
+            <p id="izquierda" class="text"></p>
+            <p id="derecha" class="text"></p>
+        </section>
     </main>
     <footer>
-        <div id="suma"></div>
-        <div id="ganador"></div>
+        <div id="suma" class="text"></div>
+        <div id="ganador" class="text"></div>
     </footer>
 </body>
 </html>
