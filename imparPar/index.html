@@ -20,30 +20,15 @@
 
                 <label for="impar">JUGADA MANO IMPAR</label>
                 <input type="radio" name="parImpar" id="impar">
-                <button onclick="seleccion_jugador()">Escojer</button>
+                <button onclick="juego.start()">Jugar</button>
             </div>
             <section id="score">
                 <p>Partidas ganadas Jugador 1: <span id="jugador1">0</span></p>
                 <p>Partidas ganadas Jugador 2: <span id="jugador2">0</span></p>
             </section>
         </header>
-        
-        <!-- <section> -->
-            <!-- <p>GANASTE YEAHHH</p> -->
-            <!-- <p>PERDISTE NOUUU</p> -->
-        <!-- </section> -->
-        
-        <section id="izquierda">
-            <figure>
-                <img src="" alt="" >
-            </figure>    
-        </section>
-
-        <section id="derecha">
-            <figure>
-                <img src="" alt="">
-            </figure> 
-        </section>
+        <p id="izquierda"></p>
+        <p id="derecha"></p>
     </main>
     <footer>
         <div id="suma"></div>
