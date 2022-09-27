@@ -1,0 +1,139 @@
+/* Mobile: 375px - Desktop: 1440px */
+:root{
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    
+    --Very-dark-blue1: hsl(217, 54%, 11%);
+    --Very-dark-blue2: hsl(216, 50%, 16%);
+    --Very-dark-blue3: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    min-height: 100vh;
+    background: var(--Very-dark-blue3);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#card{
+    background: var(--Very-dark-blue2);
+    color: var(--White);
+
+    width: 22%;
+    padding: 2rem;
+    border-radius: 1.8rem;
+}
+
+#card figure{
+    margin: 0;
+    position: relative;
+}
+
+#card figure > img:first-child{
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    border-radius: 1.8rem;
+}
+
+figure .capa {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 103, 123, 0.7);
+    transition: all 400ms ease-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+
+figure .capa:hover{
+    opacity: 0.8;
+} 
+
+
+.description > :nth-child(2) {
+    color: var(--Soft-blue);
+    font-size: 1.4rem;
+    line-height: 2rem;
+    opacity: 0.8;
+}
+
+.description> :last-child{
+    width: 100%;
+    display: flex;
+    font-size: 1.4rem;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--Cyan);
+    padding: 0 0.5rem;
+}
+
+.description > :last-child > * {
+    display: block;
+}
+
+.description> :last-child :last-child{
+    color: var(--Soft-blue);
+}   
+
+/*  */
+.by{
+    margin-top: 1rem;
+    border-top: 1px solid var(--Soft-blue);
+    padding-top: 1.4rem;
+
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.by img{
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 50%;
+    border: 1px solid var(--White);
+    margin-right: 1.4rem;
+    opacity: 0.8;
+}
+
+.by p span{
+    color: var(--Soft-blue);
+}
+/*  */
+
+.chance-font-text:hover{
+    color: var(--Cyan);
+    cursor: pointer;
+}
+
+
+/*  */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 450px) {
+    html{
+        font-size: 12px;
+    }
+    #card {
+        width: 90%;
+    }
+}
