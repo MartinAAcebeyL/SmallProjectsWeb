@@ -1,0 +1,135 @@
+:root{
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+*{
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto;
+}
+
+body{
+    margin: 0;
+    min-height: 100vh;
+    background: var(--Very-Dark-Blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card{
+    background: var(--Dark-Blue);
+    width: 25%;
+    padding: 1.5rem;
+    color: white;
+    border-radius: 1.5rem;
+}
+
+.start img{
+    background: var(--Medium-Grey);
+    width: 2.2rem;
+    border-radius: 50%;
+    padding: 0.5rem;
+}
+
+.description{
+    margin-top: 1.5rem;
+}
+
+.description :first-child {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.description :last-child {
+    font-size: 0.8rem;
+    opacity: 0.6;
+    line-height: 1.2rem;
+}
+
+.points{
+    margin: 2rem 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.points > *{
+    text-align: center;
+    background: var(--Light-Grey);
+    border-radius: 50%;
+    padding: 0.5rem;
+    width: 2.5rem;
+    cursor: pointer;
+    border: none;
+    color: var(--White);
+}
+
+.points>*:hover {
+    background: var(--Orange);
+}
+
+.points>*:focus {
+    background: var(--Very-Dark-Blue);
+}
+
+.button{
+    width: 100%;
+    border: none;
+    background: var(--Orange);
+    color: var(--White);
+    padding: 0.5rem;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+.button:hover{
+    color: var(--Orange);
+    background-color: var(--White);
+}
+
+/*  */
+.card .img{
+    display: flex;
+    justify-content: center;
+}
+
+.point-select{
+    width: fit-content;
+    margin: auto;
+    margin-top: 1.4rem;
+    padding: 0.2rem 0.4rem;
+    text-align: center;
+    color: var(--Orange);
+    background: var(--Very-Dark-Blue);
+    border-radius: 2rem;
+    font-size: 0.8rem;
+}
+
+.hidden{
+    display: none;
+}
+/*  */
+.attribution {
+    color: var(--White);
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+@media screen and (max-width: 450px) {
+
+    .card {
+        width: 90%;
+    }
+}
