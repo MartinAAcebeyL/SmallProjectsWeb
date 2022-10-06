@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+:root{
+    --Very-dark-blue: hsl(233, 47%, 7%);
+    --Dark-desaturated-blue: hsl(244, 38%, 16%);
+    --Soft-violet:hsl(277, 64%, 61%);
+
+    --White: hsl(0, 0%, 100%);
+    --Slightly: hsla(0, 0%, 100%, 0.75);
+    --Slightly2: hsla(0, 0%, 100%, 0.6);
+
+}
+
+*{
+    font-family: 'Inter', 'Lexend Deca';
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--Very-dark-blue);
+    color: var(--White);
+}
+
+#card{
+    display: flex;
+    justify-content: space-between;
+    width: 55%;
+    background: var(--Dark-desaturated-blue);
+    border-radius: 0.5rem;
+}
+
+#card >*:first-child{
+    max-width: 45%;
+    padding: 1rem 1.5rem;
+}
+
+.long-text :first-child{
+    font-size: 2.2rem;
+    margin: 0 auto;
+}
+
+.long-text :first-child span{
+    color: var(--Soft-violet);
+}
+
+.long-text >:last-child {
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+    color: var(--Slightly2);
+}
+
+.number-information{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.number-information * {
+    margin-bottom: 0;
+}
+
+.number-information>* :first-child {
+    font-size: 1.4rem;
+}
+
+.number-information >* :last-child {
+    margin-top: 0.2rem;
+    font-size: 0.7rem;
+    color: var(--Slightly2);
+}
+
+.img-card{
+    position: relative;
+}
+
+.img-card img{
+    min-height: 100%;
+    position: relative;
+    max-width: 100%;
+}
+
+.tapa-violeta{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--Soft-violet);
+    opacity: 0.6;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 450px) {
+
+    html{
+        font-size: 14px;
+    }
+
+    #card {
+        text-align: center;
+        width: 90%;
+        flex-direction: column-reverse;
+    }
+
+    #card>*:first-child {
+        max-width: 100%;
+    }
+
+    .img-card > img{
+        content: url("images/image-header-mobile.jpg");
+    }
+
+    .long-text>:last-child {
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+    }
+
+    .number-information {
+        flex-direction: column;
+    }
+
+    .number-information  :first-child{
+        font-size: 1.8rem;
+    }
+
+    .number-information :last-child {
+        font-size: 1rem;
+    }
+}
