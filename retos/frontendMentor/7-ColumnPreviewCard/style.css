@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+:root{
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+        /* neutral */
+    /* paragraphs */
+    --Transparent-white: hsla(0, 0%, 100%, 0.75);
+    /* background,headings,buttons */
+    --Very-light-gray: hsl(0, 0%, 95%);
+}
+/* 19B89D */
+*{
+    box-sizing: border-box;
+    font-family: 'Lexend Deca','Big Shoulders Display';
+}
+
+
+body{
+    margin: 0;
+    background: var(--Very-light-gray);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#card{
+    width: 60%;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--Transparent-white);
+}
+
+#card .cards:first-child{
+    background: var(--Bright-orange);
+    border-radius: 1rem 0 0 1rem;
+}
+
+#card .cards:nth-child(2) {
+    background: var(--Dark-cyan);
+}
+
+#card .cards:last-child {
+    background: var(--Very-dark-cyan);
+    border-radius: 0 1rem 1rem 0;
+}
+
+#card .cards:first-child button{
+    color: var(--Bright-orange);
+}
+
+#card .cards:nth-child(2) button {
+    color: var(--Dark-cyan);
+}
+
+#card .cards:last-child button{
+    color: var(--Very-dark-cyan);
+}
+
+.cards{
+    padding: 2rem 2.5rem;
+}
+
+.cards figure{
+    margin: auto 0;
+}
+
+.cards article> h2 {
+    font-size: 2rem;
+    color: var(--Very-light-gray);
+    text-transform: uppercase;
+}
+
+.cards article>p {
+    font-size: 0.8rem;
+    margin-bottom: 4rem;
+    padding: auto 0.5rem;
+    line-height: 1.6rem;
+}
+
+.btn{
+    border-radius: 2rem;
+    background: var(--Very-light-gray);
+    padding: 0.6rem 1.5rem;
+    border: 2px var(--Very-light-gray) solid;
+    margin-top: 1.2rem;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+.btn:hover {
+    background: transparent;
+    color: #fff !important;
+}
+
+/*  */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 450px) {
+    
+    #card {
+        margin-top: 2rem;
+        width: 88%;
+        flex-direction: column;
+    }
+
+    #card .cards:first-child{
+        border-radius: .6rem .6rem 0 0;
+    }
+
+    #card .cards:last-child {
+        border-radius: 0 0 .6rem .6rem;
+    }
+
+    .cards article>p {
+        font-size: 0.8rem;
+        margin-bottom: 0.6rem;
+        line-height: 1.2rem;
+    }
+}
