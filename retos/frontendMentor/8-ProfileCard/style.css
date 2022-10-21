@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+:root {
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+
+    --Dark-gray: hsl(0, 0%, 59%);
+
+}
+
+html {
+    font-size: 18px;
+}
+
+* {
+    font-family: "Kumbh Sans";
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--Dark-cyan);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+
+    overflow: hidden;
+    margin: 0;
+}
+
+#card {
+    background: white;
+    border-radius: 1.2rem;
+    overflow: hidden;
+}
+
+#card figure {
+    margin: 0;
+}
+
+
+.description {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -3rem;
+    margin-bottom: 0.8rem;
+}
+
+.description img {
+    box-sizing: content-box !important;
+    border-radius: 50%;
+    border: 0.4rem solid white;
+}
+
+.description p {
+    margin: 0;
+}
+
+.description :nth-child(2) {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.description :nth-child(2) span {
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+    color: var(--Dark-grayish-blue);
+}
+
+.description :last-child {
+    font-size: 0.95rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+    color: var(--Dark-grayish-blue);
+}
+
+.all-data {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    border-top: 1px solid var(--Dark-grayish-blue);
+}
+
+.all-data .data :first-child {
+    margin-bottom: 0;
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.all-data .data :last-child {
+    margin-top: 0.2rem;
+    font-size: .7rem;
+    font-weight: 300;
+    color: var(--Dark-gray);
+    letter-spacing: .1rem;
+}
+
+.ballon {
+    position: absolute;
+    z-index: -1;
+}
+
+#ballon-top {
+    top: -50%;
+    left: 0%;
+}
+
+#ball-botom {
+    right: -5%;
+    bottom: -20%;
+}
+
+/*  */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 450px) {
+    
+
+    *, *::after,::before {
+        font-family: "Kumbh Sans";
+        box-sizing: border-box;
+    }
+
+    body {
+        overflow: hidden !important;
+    }
+
+    .ballon {
+        z-index: -1;
+    }
+
+    #ballon-top {
+        position: absolute;
+        top: -50%;
+        left: 0%;
+        margin: auto;
+
+    }
+
+    #ball-botom {
+        right: -150%;
+        bottom: -70%;
+        position: absolute;
+        margin: auto;
+    }
+
+}
